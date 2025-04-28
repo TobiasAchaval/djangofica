@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 from tienda import views
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home, name='home'),
     path('', views.tienda, name='tienda'),  # Redirigir la raíz al método tienda
     path('tienda/', views.tienda, name='tienda'),  # Asegurarte de que la ruta tienda esté disponible
 ]

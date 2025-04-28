@@ -117,8 +117,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
-
+STATIC_URL = 'C:/Users/toniv/Documents/GitHub/django-fica/tienda/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'C:/Users/toniv/Documents/GitHub/django-fica/tienda/static/')]  # Ruta a tu carpeta static
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # Ruta a la carpeta donde se recopilarán los archivos estáticos en producción
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
